@@ -168,6 +168,7 @@ module.exports = function(grunt) {
             cmd: phantomBinaryPath,
             args: [
                 '--ignore-ssl-errors=true',
+                '--ssl-protocol=any',
                 runnerPath,
                 JSON.stringify(options)
             ],
